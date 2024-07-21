@@ -1,49 +1,75 @@
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #343a40;
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-table, th, td {
-    border: 1px solid #dee2e6;
-}
-
-th, td {
-    padding: 12px;
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
     text-align: center;
 }
 
-th {
-    background-color: #343a40;
-    color: #ffffff;
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
 }
 
-td {
-    background-color: #f8f9fa;
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #e9ecef;
+table tbody tr:hover {
+    background-color: #f1f1f1;
 }
 
+/* Schedule List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ul li:hover {
+    background-color: #c0c0c0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
